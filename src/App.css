@@ -30,6 +30,14 @@
   color: #61dafb;
 }
 
+/* Probably bad practice, and I should use something like styledcomponents 
+or the one that does style jsx but */
+
+.row > .col {
+  margin: 0;
+  padding: 0;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
