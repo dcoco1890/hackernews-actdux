@@ -18,6 +18,7 @@ const mapStateToProps = state => {
 };
 // connected nav component takes in queries (for now, might split later)
 const ConnectedNav = ({ queries }) => (
+   
   <nav style={styles.nav}>
     <div className="search">
       <input type="text" />

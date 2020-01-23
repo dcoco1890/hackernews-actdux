@@ -32,12 +32,25 @@
 
 /* Probably bad practice, and I should use something like styledcomponents 
 or the one that does style jsx but */
-
+.col .row {
+  margin: 0;
+  padding: 0;
+}
 .row > .col {
   margin: 0;
   padding: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

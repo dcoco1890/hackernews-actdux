@@ -11,3 +11,5 @@ export const articleView = {
 export const ADD_ARTICLE = "ADD_ARTICLE";
 export const SET_VIEW = "SET_VIEW";
 export const SAVE_QUERY = "SAVE_QUERY";
+export const REQUEST_DATA = "REQUEST_DATA";
+export const RECEIVE_DATA = "RECEIVE_DATA";
