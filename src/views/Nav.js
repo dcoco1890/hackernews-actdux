@@ -21,14 +21,14 @@ const mapStateToProps = state => {
 const ConnectedNav = ({ queries }) => (
   <nav style={styles.nav}>
     <div className="search">
-      <label for="search">
+      <label htmlFor="search">
         <input type="text" name="search" />
       </label>
     </div>
     <div className="queries" style={styles.query}>
       <ul>
         {queries.map(item => (
-          <li key={item.id}>{item.title}</li>
+          <li key={item}>{item}</li>
         ))}
       </ul>
     </div>

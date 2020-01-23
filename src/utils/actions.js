@@ -32,7 +32,6 @@ export const requestData = () => ({
 export const receiveData = data => ({
   type: RECEIVE_DATA,
   data,
-
   receivedAt: Date.now()
 });
 

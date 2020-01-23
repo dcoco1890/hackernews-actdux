@@ -18,11 +18,12 @@ const selectView = (state = GET_FRONT_PAGE, action) => {
   }
 };
 
-// Not yet in use
+// In use, removed spread operator from action.query because it was
+// spreading string into separate pieces
 const queries = (state = [], action) => {
   switch (action.type) {
     case SAVE_QUERY:
-      return [...state, ...action.query];
+      return [...state, action.query];
     default:
       return state;
   }
