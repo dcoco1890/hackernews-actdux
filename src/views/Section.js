@@ -1,12 +1,11 @@
 import React from "react";
 import Header from "../comps/Header";
+import ArticleList from "../comps/ArticleList";
 
 const Section = () => (
   <div>
     <Header />
-    <div className="row">
-        
-    </div>
+    <ArticleList />
   </div>
 );
 

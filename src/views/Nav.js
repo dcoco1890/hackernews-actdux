@@ -1,5 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
+import QueryListItem from "../comps/QueryListItem";
 
 const styles = {
   query: {
@@ -11,6 +12,11 @@ const styles = {
   nav: {
     height: "100vh",
     backgroundColor: "#ff6e40 "
+  },
+  ul: {
+    display: "flex",
+    flexDirection: "column",
+    padding: "0 .75rem"
   }
 };
 
@@ -20,15 +26,17 @@ const mapStateToProps = state => {
 // connected nav component takes in queries (for now, might split later)
 const ConnectedNav = ({ queries }) => (
   <nav style={styles.nav}>
+    {/*This might need to be componentized */}
     <div className="search">
       <label htmlFor="search">
         <input type="text" name="search" />
       </label>
     </div>
     <div className="queries" style={styles.query}>
-      <ul>
+      <p>Your searches:</p>
+      <ul className="collection" style={styles.ul}>
         {queries.map(item => (
-          <li key={item}>{item}</li>
+          <QueryListItem item={item} />
         ))}
       </ul>
     </div>
