@@ -9,7 +9,8 @@ const styles = {
     color: "green"
   },
   nav: {
-    height: "100vh"
+    height: "100vh",
+    backgroundColor: "#ff6e40 "
   }
 };
 
@@ -18,10 +19,11 @@ const mapStateToProps = state => {
 };
 // connected nav component takes in queries (for now, might split later)
 const ConnectedNav = ({ queries }) => (
-   
   <nav style={styles.nav}>
     <div className="search">
-      <input type="text" />
+      <label for="search">
+        <input type="text" name="search" />
+      </label>
     </div>
     <div className="queries" style={styles.query}>
       <ul>

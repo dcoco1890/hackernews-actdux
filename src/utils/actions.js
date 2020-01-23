@@ -3,8 +3,7 @@ import {
   SAVE_QUERY,
   SET_VIEW,
   RECEIVE_DATA,
-  REQUEST_DATA,
-
+  REQUEST_DATA
 } from "./constants";
 import API from "./API";
 
@@ -33,7 +32,7 @@ export const requestData = () => ({
 export const receiveData = data => ({
   type: RECEIVE_DATA,
   data,
-  //   articles: data.children.map(child => child.data),
+
   receivedAt: Date.now()
 });
 

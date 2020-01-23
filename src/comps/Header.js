@@ -1,15 +1,21 @@
 import React from "react";
 
 const styles = {
-  color: "#eee",
-  fontSize: "2rem"
+  head: {
+    color: "#424242",
+    fontSize: "2rem"
+  },
+  text0: {
+    fontSize: "2rem"
+  }
 };
 
 const Header = () => (
   <div style={{ padding: 0 }} className="col s12">
-    <header style={styles}>
-      <h1 style={styles}>Hackernews</h1>
+    <header style={styles.head}>
+      <h1 style={styles.text0}>Hackernews</h1>
     </header>
+    <p>hey</p>
   </div>
 );
 
