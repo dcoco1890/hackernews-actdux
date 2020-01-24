@@ -5,3 +5,5 @@ const Row = ({ data }) => (
     <td>{data.title}</td>
   </tr>
 );
+
+export default Row;

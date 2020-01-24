@@ -29,7 +29,7 @@ const queries = (state = [], action) => {
   }
 };
 
-// works, adds articles async-ly and adds them to state
+// works, adds articles and adds them to state
 const articles = (state = { isFetching: false, articles: [] }, action) => {
   switch (action.type) {
     case REQUEST_DATA:

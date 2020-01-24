@@ -3,7 +3,8 @@ import {
   SAVE_QUERY,
   SET_VIEW,
   RECEIVE_DATA,
-  REQUEST_DATA
+  REQUEST_DATA,
+  articleView
 } from "./constants";
 import API from "./API";
 
@@ -35,10 +36,38 @@ export const receiveData = data => ({
   receivedAt: Date.now()
 });
 
-export const fetchArticles = viewtype => {
+// default search, grabs front page posts
+export const fetchArticles = () => {
   return dispatch => {
     dispatch(requestData());
+    dispatch(setArticleView(articleView.GET_FRONT_PAGE));
     return API.getHomePage().then(response => {
+      const resp = response.data.hits;
+      dispatch(receiveData(resp));
+    });
+  };
+};
+
+// Ssearches HN for most recently posted articles
+export const fetchRecent = () => {
+  return dispatch => {
+    dispatch(requestData());
+    dispatch(setArticleView(articleView.GET_RECENT_POSTS));
+    return API.getRecentPosts().then(response => {
+      const resp = response.data.hits;
+      dispatch(receiveData(resp));
+    });
+  };
+};
+
+// Uses API to search hn for search term
+export const fetchQuery = queryTerm => {
+  return dispatch => {
+    // letting state know we are requesting data
+    dispatch(requestData());
+    // setting state reflect view section (get query items)
+    dispatch(setArticleView(articleView.GET_QUERY_ITEM));
+    return API.searchQueryTerm(queryTerm).then(response => {
       const resp = response.data.hits;
       dispatch(receiveData(resp));
     });
