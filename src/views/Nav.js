@@ -35,9 +35,9 @@ const ConnectedNav = ({ queries }) => (
     <div className="queries" style={styles.query}>
       <p>Your searches:</p>
       <ul className="collection" style={styles.ul}>
-        {queries.map(item => (
+        {/* {queries.map(item => (
           <QueryListItem item={item} />
-        ))}
+        ))} */}
       </ul>
     </div>
   </nav>
