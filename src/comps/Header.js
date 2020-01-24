@@ -21,7 +21,7 @@ const Header = () => (
       borderBottom: "1px solid rgba(0,0,0,0.14)",
       height: "55px"
     }}
-    className="col s12"
+   
   >
     <header style={styles.head}>
       <h1 style={styles.text0}>Hackernews</h1>

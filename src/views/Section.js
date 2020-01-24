@@ -1,12 +1,12 @@
-import React from "react";
-import Header from "../comps/Header";
-import ArticleList from "../comps/ArticleList";
+// import React from "react";
+// import Header from "../comps/Header";
+// import ArticleList from "./ArticleList";
 
-const Section = () => (
-  <div>
-    <Header />
-    <ArticleList />
-  </div>
-);
+// const Section = () => (
+//   <div className="row">
+//     <Header />
+//     <ArticleList />
+//   </div>
+// );
 
-export default Section;
+// export default Section;
