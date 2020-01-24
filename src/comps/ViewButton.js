@@ -26,7 +26,7 @@ const ConnectedViewButton = props => {
   // So, just off the cuff, i know this looks dumb as hell and
   // it only works cause i have 2 buttons, but ya boi's brain
   // is melting cause he can not figure out how to make this easier rn
-  console.log(props);
+
   let x, y;
   if (props.selectView === GET_FRONT_PAGE) {
     x = true;
