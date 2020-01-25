@@ -5,11 +5,11 @@ const styles = {
     cursor: "pointer",
     width: "12rem",
     height: "13.5rem",
-    padding: ".75rem 1.5rem",
+    padding: ".75rem",
     display: " flex",
     flexDirection: "column",
     justifyContent: "space-between",
-    margin: ".5rem 1.25rem"
+    margin: ".5rem"
   },
   text: {
     textAlign: "left",

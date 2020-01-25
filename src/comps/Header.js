@@ -5,12 +5,16 @@ const styles = {
     color: "#424242",
     fontSize: "2rem",
     display: "flex",
-    justifyContent: "space-between"
+    justifyContent: "space-between",
+    alignItems: "center",
+    height: "100%"
   },
   text0: {
     fontSize: "2rem",
     textAlign: "left",
-    paddingLeft: "1rem"
+    padding: ".25rem .5rem",
+    border: "1px solid #222",
+    marginLeft: "1rem"
   }
 };
 
@@ -21,10 +25,9 @@ const Header = () => (
       borderBottom: "1px solid rgba(0,0,0,0.14)",
       height: "55px"
     }}
-   
   >
     <header style={styles.head}>
-      <h1 style={styles.text0}>Hackernews</h1>
+      <h1 style={styles.text0}>HN </h1>
       <ViewButton />
     </header>
   </div>

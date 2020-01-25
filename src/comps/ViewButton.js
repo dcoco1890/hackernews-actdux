@@ -41,7 +41,16 @@ const ConnectedViewButton = props => {
     x = false;
   }
   return (
-    <div style={{ paddingRight: "1rem" }}>
+    <div
+      style={{
+        paddingRight: "1rem",
+        display: "flex",
+        width: "20rem",
+        height: "100%",
+        justifyContent: "space-around",
+        alignItems: "center"
+      }}
+    >
       <Button active={x} onClick={props.fetchFront} text={"Front Page"} />{" "}
       <Button active={y} onClick={props.fetchNew} text={"Recent Posts"} />{" "}
     </div>
