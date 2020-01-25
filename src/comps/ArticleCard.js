@@ -31,7 +31,12 @@ const ArticleCard = ({ title, author, points, url }) => (
   <div className="col">
     <div className="card blue-grey lighten-3" style={styles.outerCard}>
       <div className="header">
-        <a href={url} className="card-title" target="_blank">
+        <a
+          href={url}
+          rel="noreferrer noopener"
+          className="card-title"
+          target="_blank"
+        >
           <p style={styles.text}>{title}</p>
         </a>
       </div>

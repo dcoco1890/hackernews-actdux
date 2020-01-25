@@ -1,4 +1,4 @@
-// So this is a one of those container componenets that
+// So this is a one of those container comps that
 // renders Buttons, which are my dumb presentation comps.
 // IRL this would probably be moved into the view area but
 // it's already basically done and I don't want to.

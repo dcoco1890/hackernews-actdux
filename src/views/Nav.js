@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import QueryListItem from "../comps/QueryListItem";
+import Form from "../comps/Form";
 
 const styles = {
   query: {
@@ -27,11 +28,7 @@ const mapStateToProps = state => {
 const ConnectedNav = ({ queries }) => (
   <nav style={styles.nav}>
     {/*This might need to be componentized */}
-    <div className="search">
-      <label htmlFor="search">
-        <input type="text" name="search" />
-      </label>
-    </div>
+    <Form />
     <div className="queries" style={styles.query}>
       <p>Your searches:</p>
       <ul className="collection" style={styles.ul}>

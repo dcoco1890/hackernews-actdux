@@ -10,7 +10,6 @@ const Button = ({ onClick, active, text }) => (
       backgroundColor: active ? "gray" : "#2bbbad"
     }}
     className="waves-effect waves-light btn"
-    href=""
   >
     {text}
   </button>
