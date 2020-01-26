@@ -8,7 +8,15 @@ const mapStateToProps = state => {
 
 const ConnectedList = ({ articles }) => (
   <>
-    <div className="row" style={{ marginTop: "2rem", padding: "0 1.25rem" }}>
+    <div
+      className="row"
+      style={{
+        display: "flex",
+        flexWrap: "wrap",
+        justifyContent: "center",
+        padding: "0 1.25rem"
+      }}
+    >
       {/* Renders a presentational Article componenet */}
       {articles.map((item, i) => (
         <ArticleCard

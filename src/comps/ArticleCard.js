@@ -3,9 +3,10 @@ import React from "react";
 const styles = {
   outerCard: {
     cursor: "pointer",
-    width: "12rem",
+    maxWidth: "10rem",
+    flexGrow: "2",
     height: "13.5rem",
-    padding: ".75rem",
+    padding: ".25rem .75rem",
     display: " flex",
     flexDirection: "column",
     justifyContent: "space-between",

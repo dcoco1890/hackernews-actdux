@@ -32,6 +32,7 @@ const ConnectedForm = props => {
           if (userInput !== "") {
             props.save(userInput);
             props.search(userInput);
+            setUserInput("");
           }
         }}
       >
