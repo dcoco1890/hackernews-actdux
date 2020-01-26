@@ -32,6 +32,9 @@
 
 /* Probably bad practice, and I should use something like styledcomponents 
 or the one that does style jsx but */
+
+/* Also, I think all of the css I've done for this is bad practice. 
+Very sloppy, but its working */
 .col .row {
   margin: 0;
   padding: 0;
@@ -52,3 +55,39 @@ p {
   padding: 0;
 }
 
+#search-hn-header {
+  padding: 0.5rem 0.25rem;
+}
+nav {
+  height: 100vh;
+}
+
+div.queries {
+  height: 50vh;
+  overflow: auto;
+}
+
+div.queries ul {
+  display: flex;
+  flex-direction: row;
+  max-height: 100vh;
+  overflow: auto;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 600px) {
+  nav {
+    height: unset;
+  }
+  div.queries,
+  div.queries ul {
+    flex-direction: row;
+    max-height: 56px;
+    overflow: auto;
+    flex-wrap: wrap;
+  }
+  div.queries ul li {
+    margin: 0 0.25rem;
+  }
+}

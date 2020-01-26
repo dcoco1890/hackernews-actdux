@@ -7,17 +7,13 @@ import { fetchQuery } from "../utils/actions";
 const styles = {
   query: {
     display: "flex",
-    flexDirection: "column",
+
     backgroundColor: "#fafafa",
     color: "green"
   },
   nav: {
-    backgroundColor: "#ff6e40 "
-  },
-  ul: {
-    display: "flex",
-    flexDirection: "column",
-    padding: "0 .75rem"
+    backgroundColor: "#ffd180",
+    padding: ".25rem "
   }
 };
 
@@ -33,10 +29,12 @@ const mapStateToProps = state => {
 // connected nav component takes in queries (for now, might split later)
 const ConnectedNav = props => (
   <nav style={styles.nav}>
-    <Form />
+    <div className="nav-form">
+      <h4 id="search-hn-header">Search HN</h4>
+      <Form />
+    </div>
     <div className="queries" style={styles.query}>
-      <p>Your searches:</p>
-      <ul className="collection" style={styles.ul}>
+      <ul>
         {props.queries.map(item => (
           <QueryListItem
             key={item}
