@@ -4,7 +4,7 @@ const styles = {
   outerCard: {
     cursor: "pointer",
     maxWidth: "10rem",
-    flexGrow: "2",
+   
     height: "13.5rem",
     padding: ".25rem .75rem",
     display: " flex",
@@ -17,7 +17,7 @@ const styles = {
     fontFamily: "Courier New",
     fontWeight: 400,
     fontSize: "0.9rem",
-    color: "#212121"
+    
   },
   text2: {
     textAlign: "left",
@@ -38,7 +38,7 @@ const ArticleCard = ({ title, author, points, url }) => (
           className="card-title"
           target="_blank"
         >
-          <p style={styles.text}>{title}</p>
+          <p className="article-headline" style={styles.text}>{title}</p>
         </a>
       </div>
       <div className="card-bottom" style={styles.text2}>

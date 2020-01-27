@@ -14,7 +14,9 @@ const ConnectedList = ({ articles }) => (
         display: "flex",
         flexWrap: "wrap",
         justifyContent: "center",
-        padding: "0 1.25rem"
+        padding: "0 1.25rem",
+        maxHeight: "calc(100vh - 55px)",
+        overflow: "auto"
       }}
     >
       {/* Renders a presentational Article componenet */}
