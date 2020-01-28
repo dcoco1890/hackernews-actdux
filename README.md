@@ -1,4 +1,4 @@
-# [Hackernews Actdux](https://dcoco1890.github.io/hackernews-actdux/) is my attempt at a React/Redux Application
+# [Hackernews Actdux](https://dcoco1890.github.io/hackernews-actdux/) is my attempt at a HackerNews viewer built with React/Redux
 
 If you'd like to see a live demo, [click here!](https://dcoco1890.github.io/hackernews-actdux/)
 
