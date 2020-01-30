@@ -1,0 +1,14 @@
+
+nav#navbar{
+    background-color: #ffd180;
+    padding: .25rem;
+}
+
+
+#search-hn-header {
+    padding: 0.5rem 0.25rem;
+}
+div.queries {
+    height: 50vh;
+    overflow: auto;
+  }

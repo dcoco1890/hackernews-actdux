@@ -1,5 +1,3 @@
-// Constants, set this up because every tutorial says to do so
-
 // view filter, i.e wchich articles to show
 export const articleView = {
   GET_FRONT_PAGE: "GET_FRONT_PAGE",

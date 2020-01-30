@@ -1,7 +1,7 @@
 import React from "react";
-// import logo from "./logo.svg";
+
 import "./App.css";
-import Main from "./views/Main";
+import Main from "./app/Main";
 
 const App = () => {
   return (

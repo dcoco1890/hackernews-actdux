@@ -1,0 +1,10 @@
+#button-view {
+padding-right: 1rem;
+display: flex;
+width:20rem;
+height: 100%;
+justify-content: space-around;
+align-items: center;
+}
+
+

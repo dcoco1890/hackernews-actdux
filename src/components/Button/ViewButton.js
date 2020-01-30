@@ -1,13 +1,10 @@
-// So this is a one of those container comps that
-// renders Buttons, which are my dumb presentation comps.
-// IRL this would probably be moved into the view area but
-// it's already basically done and I don't want to.
 
 import React from "react";
 import { connect } from "react-redux";
 import Button from "./Button";
-import { articleView } from "../utils/constants";
-import { fetchArticles, fetchRecent } from "../utils/actions";
+import { articleView } from "../../utils/constants";
+import { fetchArticles, fetchRecent } from "../../utils/actions";
+import "./Button.css"
 
 // Constant destructured from constants.js
 const { GET_FRONT_PAGE } = articleView;
@@ -28,9 +25,7 @@ const mapDispatchToProps = dispatch => {
 };
 
 const ConnectedViewButton = props => {
-  // So, just off the cuff, i know this looks dumb as hell and
-  // it only works cause i have 2 buttons, but ya boi's brain
-  // is melting cause he can not figure out how to make this easier rn
+// lame
 
   let x, y;
   if (props.selectView === GET_FRONT_PAGE) {
@@ -42,14 +37,7 @@ const ConnectedViewButton = props => {
   }
   return (
     <div
-      style={{
-        paddingRight: "1rem",
-        display: "flex",
-        width: "20rem",
-        height: "100%",
-        justifyContent: "space-around",
-        alignItems: "center"
-      }}
+    id="button-view"
     >
       <Button active={x} onClick={props.fetchFront} text={"Front Page"} />{" "}
       <Button active={y} onClick={props.fetchNew} text={"Recent Posts"} />{" "}

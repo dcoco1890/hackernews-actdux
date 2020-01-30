@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
-import ArticleCard from "../comps/ArticleCard";
+import ArticleCard from "./ArticleCard";
+import "./Article.css"
 
 const mapStateToProps = state => {
   return { articles: state.articles.articles };
@@ -10,14 +11,8 @@ const ConnectedList = ({ articles }) => (
   <>
     <div
       className="row"
-      style={{
-        display: "flex",
-        flexWrap: "wrap",
-        justifyContent: "center",
-        padding: "0 1.25rem",
-        maxHeight: "calc(100vh - 55px)",
-        overflow: "auto"
-      }}
+      id="connected-row"
+   
     >
       {/* Renders a presentational Article componenet */}
       {articles.map((item, i) => (

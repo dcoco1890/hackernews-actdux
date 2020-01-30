@@ -7,10 +7,6 @@ import { fetchArticles } from "./actions";
 const store = createStore(rootReducer, applyMiddleware(thunkMiddleware));
 
 // Create Initial search of current front-page of HN
-store.dispatch(fetchArticles()).then(() => console.log(store.getState()));
+store.dispatch(fetchArticles())
 
-// Old testing stuff, uncomment out for sum fun
-// store.dispatch(fetchArticles()).then(() => console.log(store.getState()));
-// store.dispatch(saveQuery("hi"));
-// store.dispatch(saveQuery("hi"));
 export default store;
