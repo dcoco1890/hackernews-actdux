@@ -2,7 +2,6 @@ import React from "react";
 import ViewButton from "../Button/ViewButton";
 import "./Header.css";
 
-
 const Header = () => (
   <div id="the-header-div">
     <header id="the-header">

@@ -25,5 +25,8 @@ const ConnectedQueryLists = props => (
     ))}
   </ul>
 );
-const QueryList = connect(mapStateToProps, mapDispatchToProps)(ConnectedQueryLists);
+const QueryList = connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(ConnectedQueryLists);
 export default QueryList;

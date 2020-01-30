@@ -8,9 +8,9 @@ import ArticleList from "../components/Article/ArticleList";
 const Main = () => (
   <div style={{ margin: 0 }} className="row">
     <div className="col s12 m3 l2">
-      <Nav 
-      form={<Form />}
-      queries={<QueryList />}
+      <Nav
+        form={<Form />}
+        queries={<QueryList />}
       />
     </div>
     <div style={{ padding: 0 }} className="col s12 m9 l10">

@@ -12,7 +12,7 @@ const ConnectedList = ({ articles }) => (
     <div
       className="row"
       id="connected-row"
-   
+
     >
       {/* Renders a presentational Article componenet */}
       {articles.map((item, i) => (
