@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/hackernews-actdux/static/css/main.da4a8f46.chunk.css",
-    "main.js": "/hackernews-actdux/static/js/main.a19e7a3e.chunk.js",
-    "main.js.map": "/hackernews-actdux/static/js/main.a19e7a3e.chunk.js.map",
+    "main.css": "/hackernews-actdux/static/css/main.97474ddd.chunk.css",
+    "main.js": "/hackernews-actdux/static/js/main.e5366c31.chunk.js",
+    "main.js.map": "/hackernews-actdux/static/js/main.e5366c31.chunk.js.map",
     "runtime-main.js": "/hackernews-actdux/static/js/runtime-main.5d36b02f.js",
     "runtime-main.js.map": "/hackernews-actdux/static/js/runtime-main.5d36b02f.js.map",
-    "static/js/2.74fe8834.chunk.js": "/hackernews-actdux/static/js/2.74fe8834.chunk.js",
-    "static/js/2.74fe8834.chunk.js.map": "/hackernews-actdux/static/js/2.74fe8834.chunk.js.map",
+    "static/js/2.0888b55f.chunk.js": "/hackernews-actdux/static/js/2.0888b55f.chunk.js",
+    "static/js/2.0888b55f.chunk.js.map": "/hackernews-actdux/static/js/2.0888b55f.chunk.js.map",
     "index.html": "/hackernews-actdux/index.html",
-    "precache-manifest.8ec8f26d2dacd43b2b8cfac8935eb362.js": "/hackernews-actdux/precache-manifest.8ec8f26d2dacd43b2b8cfac8935eb362.js",
+    "precache-manifest.b6bf3892886815b46d01ef1ae2c9cddb.js": "/hackernews-actdux/precache-manifest.b6bf3892886815b46d01ef1ae2c9cddb.js",
     "service-worker.js": "/hackernews-actdux/service-worker.js",
-    "static/css/main.da4a8f46.chunk.css.map": "/hackernews-actdux/static/css/main.da4a8f46.chunk.css.map",
-    "static/js/2.74fe8834.chunk.js.LICENSE": "/hackernews-actdux/static/js/2.74fe8834.chunk.js.LICENSE"
+    "static/css/main.97474ddd.chunk.css.map": "/hackernews-actdux/static/css/main.97474ddd.chunk.css.map",
+    "static/js/2.0888b55f.chunk.js.LICENSE": "/hackernews-actdux/static/js/2.0888b55f.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.5d36b02f.js",
-    "static/js/2.74fe8834.chunk.js",
-    "static/css/main.da4a8f46.chunk.css",
-    "static/js/main.a19e7a3e.chunk.js"
+    "static/js/2.0888b55f.chunk.js",
+    "static/css/main.97474ddd.chunk.css",
+    "static/js/main.e5366c31.chunk.js"
   ]
 }
