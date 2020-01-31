@@ -1,5 +1,5 @@
 // Adding redux-persist imports 1/31/20
-import { PersistGate } from "redux-persist/lib/integration/react";
+
 import { persistStore, persistReducer } from "redux-persist";
 import storage from "redux-persist/lib/storage";
 // redux-persist-----------------------
@@ -24,7 +24,9 @@ const pReducer = persistReducer(persistConfig, rootReducer);
 // export default store;
 
 export default () => {
-  let store = createStore(pReducer);
+  console.log("Loading Stuff");
+  let store = createStore(pReducer, applyMiddleware(thunkMiddleware));
   let persistor = persistStore(store);
+  store.dispatch(fetchArticles());
   return { store, persistor };
 };
