@@ -6,7 +6,7 @@ import {
   REQUEST_DATA,
   articleView
 } from "./constants";
-import API from "./API/API";
+import API from "../API/API";
 
 // action creators
 export function setArticleView(filter) {

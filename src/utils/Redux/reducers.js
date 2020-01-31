@@ -6,6 +6,16 @@ import {
   REQUEST_DATA
 } from "./constants";
 import { combineReducers } from "redux";
+import { persistReducer } from "redux-persist";
+
+import storage from "redux-persist/lib/storage";
+
+// Config for persist
+const persistConfig = {
+  key: "root",
+  storage,
+  whitelist: ["queries"]
+};
 
 // Works, tested, returns state with new view option
 const { GET_FRONT_PAGE } = articleView;
@@ -46,12 +56,12 @@ const articles = (state = { isFetching: false, articles: [] }, action) => {
   }
 };
 
-// the root reducer, combines all reducers
-// reducers split up and manage separate parts of state
 const rootReducer = combineReducers({
   selectView,
   articles,
   queries
 });
 
-export default rootReducer;
+const pReducer = persistReducer(persistConfig, rootReducer);
+
+export default pReducer;

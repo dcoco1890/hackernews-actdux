@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { connect } from "react-redux";
-import { fetchQuery, saveQuery } from "../../utils/actions";
+import { fetchQuery, saveQuery } from "../../utils/Redux/actions";
 
 // The save and Search functions
 const mapDispatchToProps = dispatch => {
