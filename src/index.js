@@ -1,11 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
-import store from "../src/utils/store";
-
+// import store from "./utils/Redux/store";
+import { PersistGate } from "redux-persist/es/integration/react";
+import configStore from "./utils/Redux/store/";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
+
+const { persistor, store } = configStore();
 
 // Wrapping entire APP comp with Provider with store. Store is
 // a default export from ./src/utils/index

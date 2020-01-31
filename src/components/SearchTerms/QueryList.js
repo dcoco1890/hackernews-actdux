@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import { fetchQuery } from "../../utils/actions";
+import { fetchQuery } from "../../utils/Redux/actions";
 import QueryListItem from "./QueryListItem";
 
 const mapDispatchToProps = dispatch => {
