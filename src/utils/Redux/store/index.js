@@ -1,32 +1,23 @@
 // Adding redux-persist imports 1/31/20
+import { persistStore } from "redux-persist";
 
-import { persistStore, persistReducer } from "redux-persist";
-import storage from "redux-persist/lib/storage";
-// redux-persist-----------------------
+// Typical Redux stuff
 import { createStore, applyMiddleware } from "redux";
 import thunkMiddleware from "redux-thunk";
-import rootReducer from "../reducers";
 import { fetchArticles } from "../actions";
+import pReducer from "../reducers";
 
-const persistConfig = {
-  key: "root",
-  storage
-};
+// Logging
+// import logger from "redux-logger";
 
-const pReducer = persistReducer(persistConfig, rootReducer);
-
-// Store that will get passed to Reducer with thunk
-// const store = createStore(rootReducer, applyMiddleware(thunkMiddleware));
-
-// // Create Initial search of current front-page of HN
-// store.dispatch(fetchArticles());
-
-// export default store;
+// New Persisting reducer
 
 export default () => {
-  console.log("Loading Stuff");
   let store = createStore(pReducer, applyMiddleware(thunkMiddleware));
   let persistor = persistStore(store);
   store.dispatch(fetchArticles());
   return { store, persistor };
 };
+
+// USe this if you want to log state
+// let store = createStore(pReducer, applyMiddleware(thunkMiddleware, logger));
