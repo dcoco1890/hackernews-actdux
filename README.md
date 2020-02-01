@@ -2,8 +2,12 @@
 
 If you'd like to see a live demo, [click here!](https://dcoco1890.github.io/hackernews-actdux/)
 
-Since this not a Full-Stack App (no back-end right now) it is hosted on Github pages. Considering adding Redux Persist but not yet implemented  
+This is a React/Redux SPA hosted on Github pages. This app was made to test my skills in both React and Redux. 
 
+
+### Update on 2/1/2020 
+
+I added redux-persist to try and save search queries beyond individual browser sessions. Right now it's only kind of working in Firefox, but it is working on Chrome. Queries are saved via local storage so if your browser is set to clear cookies after closing search terms will not be saved.
 
 ### How to
 * Navigate
