@@ -34,6 +34,13 @@ const queries = (state = [], action) => {
   switch (action.type) {
     case SAVE_QUERY:
       return [...state, action.query];
+    case "persist/REHYDRATE":
+      if (action.payload) {
+        return [...action.payload.queries];
+      } else {
+        return state;
+      }
+
     default:
       return state;
   }
